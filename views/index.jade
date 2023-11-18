@@ -3,8 +3,17 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  p #{messages[0].text}
+  ul
+    each val in [1, 2, 3, 4, 5]
+     li= val
+  each message in messages
+    p text: #{message.text}
+    p user: #{message.user}
+    p added: #{message.added.toDateString()}
 
-//- work here
+ul
+  each val in [1, 2, 3, 4, 5]
+    li= val
 
-  each val, key in messages
-    p #{key}: #{value}
+
