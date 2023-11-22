@@ -1,0 +1,11 @@
+extends layout 
+
+block content
+    h2 leave message
+
+    form(action='/new' method='post')
+        label(for='author') Author Name:
+        input#author(type='text' name='author' required='')
+        label(for='message') Message:
+        textarea#message(name='message' rows='4' required='')
+        input(type='submit' value='Submit')
