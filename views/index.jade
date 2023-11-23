@@ -5,18 +5,11 @@ block content
   p Welcome to #{title}
   p #{messages[0].text}
   
-  ul
-    each val in [1, 2, 3, 4, 5]
-      li= val
-
   each message in messages
     p text: #{message.text}
     p user: #{message.user}
     p added: #{message.added.toDateString()}
 
-  ul
-    each val in [1, 2, 3, 4, 5]
-      li= val
 
   a(href="/new") new
 
