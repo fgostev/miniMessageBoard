@@ -3,7 +3,7 @@ extends layout
 block content
     h2 leave message
 
-    form(action='/new' method='post')
+    form(action='/new' method='POST')
         label(for='author') Author Name:
         input#author(type='text' name='author' required='')
         label(for='message') Message:
